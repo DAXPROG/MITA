@@ -9,18 +9,20 @@ const STORAGE_KEYS = {
 // Beautiful default data with rich content
 const defaultData = {
  news: [
-     { id: 1, title_en: '📢 Free Will Writing Workshop - April 15', title_sw: '📢 Warsha ya bure ya kuandika wosia - Aprili 15', date: '2025-04-15', image: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400' },
-     { id: 2, title_en: '⚖️ New Inheritance Law Guide Published', title_sw: '⚖️ Mwongozo mpya wa sheria za urithi umetolewa', date: '2025-05-01', image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400' },
-     { id: 3, title_en: '👵🏽 Special Legal Aid for Elderly - May 10', title_sw: '👵🏽 Msaada maalum kwa wazee - Mei 10', date: '2025-05-10', image: 'https://images.unsplash.com/photo-1576765974826-2f8058b5d0a7?w=400' }
+     { id: 1, title_en: '📢 ⚖️ Elimu ya mirathi, shule ya Mbutu Mkwajuni.', date: '2025-04-15', image: 'assets/images/product3.jpeg' },
+     { id: 2, title_en: '⚖️ New Inheritance Law Guide Published', title_sw: 'Wanafunzi wakijaza dodoso, kabla ya kupatiwa elimu ya mirathi.', date: '2025-05-01', image: 'assets/images/image4.jpeg' },
+     { id: 3, title_en: '👵🏽 Maswali na majibu baada ya wanafunzi kupatiwa elimu ya mirathi.', title_sw: '👵🏽 Maswali na majibu baada ya wanafunzi kupatiwa elimu ya mirathi.', date: '2025-05-10', image: 'assets/images/product3.jpeg' },
+     { id: 3, title_en: 'Elimu ya mirathi ikitolewa katika kipindi cha Kumepambazuka, Radio One.', title_sw: 'Elimu ya mirathi ikitolewa katika kipindi cha Kumepambazuka, Radio One.', date: '2025-05-10', image: 'assets/images/image5.jpeg' },
+     { id: 3, title_en: 'Wanafunzi wapatiwa majarida ili kujifunza zaidi baada ya kupewa elimu ya mirathi', title_sw: 'Wanafunzi wapatiwa majarida ili kujifunza zaidi baada ya kupewa elimu ya mirathi', date: '2025-05-10', image: 'assets/images/image6.jpeg' }
  ],
  products: [
-     { id: 1, name_en: '📘 Will Writing Guide (Booklet)', name_sw: '📘 Mwongozo wa kuandika wosia', description_en: 'Step-by-step guide in simple language', description_sw: 'Mwongozo wa hatua kwa hatua kwa lugha rahisi', image: 'https://images.unsplash.com/photo-1589998059171-988d887df646?w=400' },
-     { id: 2, name_en: '📋 Inheritance Checklist', name_sw: '📋 Orodha ya urithi', description_en: 'What to do when a loved one passes', description_sw: 'Nini cha kufanya mpendwa anapofariki', image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400' },
-     { id: 3, name_en: '🎥 Online Course: Probate Basics', name_sw: '🎥 Kozi ya mtandaoni: Misingi ya Mirathi', description_en: '3-hour video course with certificate', description_sw: 'Kozi ya saa 3 na cheti', image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400' }
+     { id: 1, name_en: '📘 Will Writing Guide (Booklet)', name_sw: '📘 Mwongozo wa kuandika wosia', description_en: 'Step-by-step guide in simple language', description_sw: 'Mwongozo wa hatua kwa hatua kwa lugha rahisi', image: 'assets/images/product1.jpeg' },
+     { id: 2, name_en: '📋 Inheritance Checklist', name_sw: '📋 Orodha ya urithi', description_en: 'What to do when a loved one passes', description_sw: 'Nini cha kufanya mpendwa anapofariki', image: 'assets/images/product2.jpeg' },
+     { id: 3, name_en: '🎥 Online Course: Probate Basics', name_sw: '🎥 Kozi ya mtandaoni: Misingi ya Mirathi', description_en: '3-hour video course with certificate', description_sw: 'Kozi ya saa 3 na cheti', image: 'assets/images/product3.jpeg' }
  ],
  testimonials: [
-     { id: 1, text_en: 'MITA helped me understand my rights as a widow. Now I can protect my children\'s future.', text_sw: 'MITA imenisaidia kuelewa haki zangu kama mjane. Sasa ninaweza kulinda mustakabali wa watoto wangu.', author: 'Maria K.', image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200' },
-     { id: 2, text_en: 'They guided our family through the probate process peacefully. Highly recommend!', text_sw: 'Walituongoza familia yetu katika kesi ya mirathi kwa amani. Nawashauri sana!', author: 'Juma & Family', image: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?w=200' }
+     { id: 1, text_en: 'MITA helped me understand my rights as a widow. Now I can protect my children\'s future.', text_sw: 'MITA imenisaidia kuelewa haki zangu kama mjane. Sasa ninaweza kulinda mustakabali wa watoto wangu.', author: 'Maria K.', image: 'assets/images/test1.jpeg' },
+     { id: 2, text_en: 'They guided our family through the probate process peacefully. Highly recommend!', text_sw: 'Walituongoza familia yetu katika kesi ya mirathi kwa amani. Nawashauri sana!', author: 'Juma & Family', image: 'assets/images/test2.jpeg' }
  ],
  faq: [
      { id: 1, question_en: 'Who can write a will?', question_sw: 'Nani anaweza kuandika wosia?', answer_en: 'Any adult of sound mind (18+ years) can write a will.', answer_sw: 'Kila mtu mzima mwenye akili timamu (miaka 18+) anaweza kuandika wosia.' },
