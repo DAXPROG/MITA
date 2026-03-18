@@ -1,0 +1,156 @@
+/* assets/css/style.css */
+:root {
+ --sky: #0dcaf0;
+ --sky-dark: #0b87a8;
+ --sky-light: #e1f3fd;
+}
+body { font-family: 'Segoe UI', system-ui, sans-serif; scroll-behavior: smooth; }
+.text-sky { color: var(--sky-dark); }
+.bg-sky { background-color: var(--sky) !important; }
+.bg-sky-very-light { background-color: #f0faff; }
+
+.btn-sky {
+ background-color: var(--sky);
+ border: none;
+ color: #000;
+ font-weight: 500;
+}
+.btn-sky:hover { background-color: #0bb5d8; color: #000; }
+
+.section-title {
+ font-weight: 700;
+ color: #0a5b73;
+ margin-bottom: 2rem;
+ position: relative;
+}
+.section-title:after {
+ content: '';
+ display: block;
+ width: 70px;
+ height: 4px;
+ background: var(--sky);
+ margin-top: 8px;
+ border-radius: 4px;
+}
+
+/* floating buttons blink */
+.float-btn {
+ position: fixed;
+ width: 60px;
+ height: 60px;
+ bottom: 100px;
+ right: 20px;
+ background-color: #25d366;
+ color: white;
+ border-radius: 50%;
+ text-align: center;
+ font-size: 30px;
+ line-height: 60px;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+ z-index: 999;
+ transition: 0.2s;
+ text-decoration: none;
+ animation: blink 2s infinite;
+}
+.float-upcoming{
+ position: fixed;
+ width: 30%;
+ max-height: 100px;
+ /* bottom: 100px; */
+ left: 20px;
+ background-color: #25d366;
+ color: white;
+ border-radius: 30%;
+ text-align: center;
+ font-size: 12px;
+ box-shadow: 0 4px 12px rgba(4, 119, 171, 0.2);
+ z-index: 999;
+ transition: 0.2s;
+ text-decoration: none;
+ animation: blink 2s infinite;
+}
+.call-btn {
+ bottom: 180px;
+ background-color: var(--sky);
+ animation: blink 2s infinite 0.5s;
+}.cupcoming{
+ top: 100px;
+ background-color: rgb(246, 118, 163);
+ animation: blink 0.5s infinite 0.5s;
+}
+@keyframes blink {
+ 0%, 100% { opacity: 1; transform: scale(1); }
+ 50% { opacity: 0.7; transform: scale(1.05); }
+}
+.float-btn:hover { animation: none; transform: scale(1.1); color: white; }
+
+.navbar-brand img { object-fit: contain; }
+
+.about-card, .service-card, .product-card, .testimonial-card {
+ background: white;
+ border-radius: 20px;
+ padding: 1.5rem;
+ box-shadow: 0 5px 20px rgba(0,160,210,0.1);
+ transition: 0.3s;
+ border: 1px solid rgba(13,202,240,0.2);
+ height: 80%;
+}
+.about-card:hover, .service-card:hover, .product-card:hover {
+ transform: translateY(-6px);
+ box-shadow: 0 20px 30px -8px rgba(13,202,240,0.3);
+}
+
+.map-container {
+ overflow: hidden;
+ border-radius: 20px;
+ height: 280px;
+}
+.map-container iframe { width: 100%; height: 100%; border: 0; }
+
+.social-links a {
+ color: #0b6e8f;
+ font-size: 2rem;
+ margin-right: 15px;
+ transition: 0.2s;
+}
+.social-links a:hover { color: var(--sky); }
+
+.team-img {
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+ object-fit: cover;
+ border: 4px solid var(--sky);
+ margin-bottom: 1rem;
+}
+.partner-img {
+ width: 150px;
+ height: 100px;
+ border-radius: 20%;
+ object-fit: cover;
+ border: 2px solid rgb(0, 255, 119);
+ margin-bottom: 1rem;
+}
+
+footer { background-color: #0b4f63; }
+
+@media (max-width: 768px) {
+ .float-btn { width: 50px; height: 50px; font-size: 24px; line-height: 50px; right: 15px; }
+ .call-btn { bottom: 160px; }
+ .float-upcoming{
+  width: 50%;
+ }
+
+}
+@media (max-width: 443px) {
+ .float-upcoming{
+  width: 50%;
+ }
+ .cupcoming{
+  top: 140px;
+ }
+}
+
+body{
+ object-fit:scale-down
+}

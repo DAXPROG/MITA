@@ -1,0 +1,324 @@
+<!-- index.php (Fixed & Complete) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIRATHI TANZANIA (MITA) | Urithi wako Haki yako!</title>
+    <!-- Bootstrap + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 350px;
+        }
+        
+        .slideshow-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            border-radius: 1rem !important;
+        }
+        
+        .slideshow-img.active {
+            opacity: 1;
+            z-index: 1;
+        }
+        
+        .hero-img {
+            max-height: 400px;
+        }
+        </style>
+</head>
+<body>
+    <!-- floating buttons (blink) -->
+    <a href="test.html" target="_blank" class="float-upcoming cupcoming" id="" title="piga simu">
+        <div href="#" style="color:rgb(255, 255, 255);align-content: center;">
+           <p style="margin: 0;padding: 0;font-size: 13px;font-weight: bold;background-color: #0b87a8;border-radius: 10px;">Upcoming Live  Session</p>
+           <div style="color:#0b87a8;width:80%;margin: auto;font-size: 19px;font-weight: bold;" >
+            ⚖️ Nafasi ya mke katika Urithi ⚖️ 
+           </div> 
+        </div>
+    </a>
+
+    <a href="tel:+255761771141" class="float-btn call-btn" id="callBtn" title="piga simu"><i class="bi bi-telephone-fill"></i></a>
+    
+    <a href="https://wa.me/255761771141?text=Habari%20MITA%2C%20ningependa%20kuuliza..." class="float-btn whatsapp-btn" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+    <!-- NAVBAR with real logo -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.php">
+                <img src="assets/images/Logo.jpeg" style="border-radius: 50%;" alt="MITA logo" height="70" class="me-2">
+                <span class="fw-bold brand-name">MIRATHI TANZANIA <span class="text-sky">(MITA)</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home" data-i18n="home">Nyumbani</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-i18n="about">Kuhusu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services" data-i18n="services">Huduma</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products" data-i18n="products">Bidhaa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials" data-i18n="testimonials">Ushuhuda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq" data-i18n="faq">Maswali</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team" data-i18n="team">Timu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="contact">Mawasiliano</a></li>
+                    <!-- language switcher -->
+                    <li class="nav-item dropdown ms-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown"><i class="bi bi-globe"></i> <span id="currentLang">SW</span></a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('sw')">Kiswahili</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
+                        </ul>
+                    </li>
+                    <!-- admin login trigger -->
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#adminLoginModal"><i class="bi bi-shield-lock"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO with online image -->
+    <section id="home" class="hero-section">
+        <br>
+        <div class="container">
+            <div class="row align-items-center min-vh-50 py-5">
+                <div class="col-lg-6 text-center mt-4 mt-lg-0 position-relative" style="min-height: 350px;">
+                    <div class="slideshow-container position-relative w-100 h-100">
+                        <img src="assets/images/image.jpeg" alt="Family legacy 1" class="img-fluid rounded-4 hero-img shadow slideshow-img active">
+                        <img src="assets/images/image2.jpeg" alt="Family legacy 2" class="img-fluid rounded-4 hero-img shadow slideshow-img">
+                        <img src="assets/images/image3.jpeg" alt="Family legacy 3" class="img-fluid rounded-4 hero-img shadow slideshow-img">
+                        <img src="assets/images/image4.jpeg" alt="Family legacy 3" class="img-fluid rounded-4 hero-img shadow slideshow-img">
+                        <img src="assets/images/image5.jpeg" alt="Family legacy 3" class="img-fluid rounded-4 hero-img shadow slideshow-img">
+                        <img src="assets/images/image6.jpeg" alt="Family legacy 3" class="img-fluid rounded-4 hero-img shadow slideshow-img">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3 mt-1"><span data-i18n="hero_title">Urithi wako,</span> <span class="text-sky" data-i18n="hero_highlight">Haki yako!</span></h1>
+                    <p class="lead mb-4" data-i18n="hero_desc">Kwa nini uchague MITA? Tunatoa mwongozo wa kitaalamu kuhusu sheria za urithi, mirathi, wosia na usimamizi wa mali za marehemu. Tunawawezesha familia na kuhakikisha wapendwa wako wanalindwa.</p>
+                    <a href="#contact" class="btn btn-sky btn-lg px-4 me-2" data-i18n="contact_btn">Wasiliana nasi</a>
+                    <a href="#about" class="btn btn-outline-secondary btn-lg px-4" data-i18n="learn_more">Maelezo zaidi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS SECTION -->
+    <section id="news" class="py-5 bg-light">
+        <br>
+        <div class="container">
+            <h2 class="section-title" data-i18n="news">Habari mpya</h2>
+            <div class="row" id="newsContainer"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-5">
+        <br>
+        <div class="container">
+            <h2 class="section-title" data-i18n="about_us">Kuhusu sisi</h2>
+            <div class="row g-4">
+                <div class="col-md-4"><div class="about-card p-4 h-100"><i class="bi bi-book fs-1 text-sky"></i><h4 class="mt-3" data-i18n="our_story">Our Story</h4><p data-i18n="story_text">MITA ni asasi isiyo ya kiserikali inayowasaidia Watanzania hasa wajane, watoto, wazee na familia za kipato cha chini kupitia taratibu za usimamizi wa mirathi ili kupata haki yao ya urithi.</p></div></div>
+                <div class="col-md-4"><div class="about-card p-4 h-100"><i class="bi bi-bullseye fs-1 text-sky"></i><h4 class="mt-3" data-i18n="mission">Mission</h4><p data-i18n="mission_text">Kuharakisha haki za mirathi kwa makundi tete, kupunguza gharama na ucheleweshaji katika usimamizi wa mirathi.</p></div></div>
+                <div class="col-md-4"><div class="about-card p-4 h-100"><i class="bi bi-eye fs-1 text-sky"></i><h4 class="mt-3" data-i18n="vision">Vision</h4><p data-i18n="vision_text">Tanzania ambayo haki za urithi kwa makundi tete si lengo bali ni haki inayotolewa kwa urahisi.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-5 bg-sky-very-light">
+        <br>
+        <div class="container">
+            <h2 class="section-title" data-i18n="our_services">Huduma zetu</h2>
+            <div class="row g-4" id="servicesContainer"></div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="py-5">
+        <br>
+        <div class="container">
+            <h2 class="section-title" data-i18n="products">Bidhaa / Nyenzo</h2>
+            <div class="row" id="productsContainer"></div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="py-5 bg-light">
+        <br>
+        <div class="container">
+            <h2 class="section-title" data-i18n="testimonials">Wanachosema wateja</h2>
+            <div class="row" id="testimonialsContainer"></div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5">
+        <br>
+        <div class="container">
+            <h2 class="section-title" data-i18n="faq">Maswali ya mara kwa mara</h2>
+            <div class="accordion" id="faqAccordion"></div>
+        </div>
+    </section>
+
+    <!-- TEAM with online images -->
+    <section id="team" class="py-5 bg-sky-very-light">
+        <br>
+        <div class="container">
+            <h2 class="section-title" data-i18n="team">Timu yetu</h2>
+            <div class="row" id="teamContainer"></div>
+        </div>
+    </section>
+
+    <!-- WASHIRIKA with online images -->
+    <section id="team" class="py-5 bg-sky-very-light">
+        <br>
+        <div class="container">
+            <h2 class="section-title" data-i18n="partners">Wadau/Washirika</h2>
+            <div class="row" id="washirikaContainer"></div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact">Mawasiliano</h2>
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <p><i class="bi bi-geo-alt-fill text-sky me-2"></i> <strong data-i18n="location">Maweni, Skanska – Kigamboni</strong><br><a href="https://maps.app.goo.gl/MdP9Fa5wHW5jJdRq8" target="_blank" data-i18n="map_link">Tazama ramani ya Google</a></p>
+                    <p><i class="bi bi-envelope-fill text-sky me-2"></i> info@mirathitanzania.com</p>
+                    <p><i class="bi bi-telephone-fill text-sky me-2"></i> +255-761 771 141 (Ofisi)</p>
+                    <p><i class="bi bi-clock-fill text-sky me-2"></i> <span data-i18n="hours">Jumatatu–Ijumaa: 8:00 asubuhi – 4:00 mchana</span></p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/mirathi_tz_ngo" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253783.20137960348!2d39.1643057!3d-6.7923543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c39e9f0b8c1d5%3A0x8e1f8d7c8e8e8e8e!2sKigamboni%2C%20Dar%20es%20Salaam!5e0!3m2!1sen!2stz!4v1688888888888" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-0">© 2025 MIRATHI TANZANIA NGO (MITA) – <span data-i18n="slogan">Urithi wako, Haki yako!</span></p>
+        </div>
+    </footer>
+
+    <!-- ADMIN LOGIN MODAL -->
+    <div class="modal fade" id="adminLoginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-sky">
+                    <h5 class="modal-title" data-i18n="admin_login">Admin access</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted" data-i18n="admin_note">Ingiza namba maalum ya kuingia (kwa sasa ni 1234).</p>
+                    <input type="password" id="adminCode" class="form-control" placeholder="****">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="close">Funga</button>
+                    <button type="button" class="btn btn-sky" onclick="verifyAdmin()" data-i18n="login">Ingia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADMIN PANEL MODAL (CRUD) -->
+    <div class="modal fade" id="adminPanelModal" tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-sky">
+                    <h5 class="modal-title" data-i18n="admin_dashboard">Admin Dashboard - Badilisha yaliyomo</h5>
+                    <button type="button" class="btn-close" onclick="closeAdminPanel()"></button>
+                </div>
+                <div class="modal-body" id="adminPanelBody">
+                    <ul class="nav nav-tabs" id="adminTabs">
+                        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#newsTab">Habari</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#productsTab">Bidhaa</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#testimonialsTab">Ushuhuda</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#faqTab">Maswali</a></li>
+                    </ul>
+                    <div class="tab-content p-3 border border-top-0">
+                        <!-- News Admin -->
+                        <div class="tab-pane fade show active" id="newsTab">
+                            <h6>Simamia Habari</h6>
+                            <div id="newsAdminList"></div>
+                            <button class="btn btn-sm btn-sky mt-2" onclick="adminAddNews()"><i class="bi bi-plus"></i> Ongeza</button>
+                        </div>
+                        <!-- Products Admin -->
+                        <div class="tab-pane fade" id="productsTab">
+                            <h6>Simamia Bidhaa</h6>
+                            <div id="productsAdminList"></div>
+                            <button class="btn btn-sm btn-sky mt-2" onclick="adminAddProduct()"><i class="bi bi-plus"></i> Ongeza</button>
+                        </div>
+                        <!-- Testimonials Admin -->
+                        <div class="tab-pane fade" id="testimonialsTab">
+                            <h6>Simamia Ushuhuda</h6>
+                            <div id="testimonialsAdminList"></div>
+                            <button class="btn btn-sm btn-sky mt-2" onclick="adminAddTestimonial()"><i class="bi bi-plus"></i> Ongeza</button>
+                        </div>
+                        <!-- FAQ Admin -->
+                        <div class="tab-pane fade" id="faqTab">
+                            <h6>Simamia Maswali</h6>
+                            <div id="faqAdminList"></div>
+                            <button class="btn btn-sm btn-sky mt-2" onclick="adminAddFaq()"><i class="bi bi-plus"></i> Ongeza</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeAdminPanel()" data-i18n="close">Funga</button>
+                    <button type="button" class="btn btn-sky" onclick="saveAllChanges()" data-i18n="save_changes">Hifadhi mabadiliko yote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/admin.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slideshow-img');
+            let currentSlide = 0;
+            
+            // Function to change slide with opacity transition
+            function nextSlide() {
+                // Remove active class from current slide
+                slides[currentSlide].classList.remove('active');
+                
+                // Calculate next slide index
+                currentSlide = (currentSlide + 1) % slides.length;
+                
+                // Add active class to next slide
+                slides[currentSlide].classList.add('active');
+            }
+            
+            // Change slide every 3 seconds
+            setInterval(nextSlide, 3000);
+        });
+        </script>
+</body>
+</html>
